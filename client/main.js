@@ -1,5 +1,5 @@
 function onLoaded() {
-    var source = new EventSource("http://localhost:4000/listen");
+    var source = new EventSource("listen");
     source.onmessage = function (event) {
         console.log("OnMessage called:");
         console.dir(event);
